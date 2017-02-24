@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MySayCell">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HHv-S4-WYx">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3eD-82-7eP">
+                        <rect key="frame" x="8" y="8" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="97q-3A-BeM"/>
+                            <constraint firstAttribute="width" constant="40" id="RRm-rI-CxR"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="好奇心" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eiF-o0-lnP">
+                        <rect key="frame" x="56" y="8" width="86" height="16"/>
+                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="13"/>
+                        <color key="textColor" red="0.41960784309999999" green="0.79215686269999996" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T7b-of-SL7">
+                        <rect key="frame" x="0.0" y="122" width="150" height="28"/>
+                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="13"/>
+                        <state key="normal" title="多少人赞过">
+                            <color key="titleColor" red="0.99215692281723022" green="0.98823535442352295" blue="0.97254908084869385" alpha="1" colorSpace="deviceRGB"/>
+                            <color key="titleShadowColor" red="0.97254908080000002" green="0.98039221759999995" blue="0.92941182850000004" alpha="1" colorSpace="deviceRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="btnClick:" destination="gTV-IL-0wX" eventType="touchUpInside" id="okH-JJ-pqg"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="内容" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jdf-Zx-eKz">
+                        <rect key="frame" x="0.0" y="45" width="150" height="85"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="85" id="HRI-Il-WpS"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="jdf-Zx-eKz" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="1uA-np-CoQ"/>
+                <constraint firstAttribute="trailing" secondItem="eiF-o0-lnP" secondAttribute="trailing" constant="8" id="2U0-6Q-vN5"/>
+                <constraint firstAttribute="trailing" secondItem="HHv-S4-WYx" secondAttribute="trailing" id="4cF-y5-w8A"/>
+                <constraint firstAttribute="trailing" secondItem="jdf-Zx-eKz" secondAttribute="trailing" id="Daw-Pb-uGS"/>
+                <constraint firstItem="eiF-o0-lnP" firstAttribute="leading" secondItem="3eD-82-7eP" secondAttribute="trailing" constant="8" id="KoM-uY-qTc"/>
+                <constraint firstAttribute="bottom" secondItem="HHv-S4-WYx" secondAttribute="bottom" id="LOj-Se-xm0"/>
+                <constraint firstItem="3eD-82-7eP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="NAg-w8-Jpd"/>
+                <constraint firstItem="3eD-82-7eP" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="P2p-Rq-51e"/>
+                <constraint firstItem="eiF-o0-lnP" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="Uk9-sY-gnE"/>
+                <constraint firstItem="T7b-of-SL7" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="VeF-Jm-gfN"/>
+                <constraint firstAttribute="bottom" secondItem="T7b-of-SL7" secondAttribute="bottom" id="j35-JF-WU7"/>
+                <constraint firstItem="HHv-S4-WYx" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="l0V-Kj-hie"/>
+                <constraint firstItem="HHv-S4-WYx" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="tpL-Vb-ALZ"/>
+                <constraint firstAttribute="trailing" secondItem="T7b-of-SL7" secondAttribute="trailing" id="xc6-iP-BnY"/>
+                <constraint firstItem="jdf-Zx-eKz" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="45" id="xqI-Vg-xBa"/>
+            </constraints>
+            <size key="customSize" width="144" height="192"/>
+            <connections>
+                <outlet property="bkView" destination="HHv-S4-WYx" id="PoM-bi-fst"/>
+                <outlet property="contentLabel" destination="jdf-Zx-eKz" id="VnS-yF-JTO"/>
+                <outlet property="headerView" destination="3eD-82-7eP" id="Naz-EE-Ws8"/>
+                <outlet property="loveBtn" destination="T7b-of-SL7" id="DJf-vd-PB1"/>
+                <outlet property="nameLabel" destination="eiF-o0-lnP" id="Z2F-zd-L5a"/>
+            </connections>
+            <point key="canvasLocation" x="289" y="272"/>
+        </collectionViewCell>
+    </objects>
+</document>
